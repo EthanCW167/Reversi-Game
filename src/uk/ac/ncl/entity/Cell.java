@@ -147,4 +147,4 @@ public class Cell {
         return isLegal;
         }
     }
-}
+
