@@ -72,7 +72,7 @@ public class Cell {
         this.value = value;
         switch (value){
             case EMPTY:
-                this.jButton.setBackground(new Color(820000));
+                this.jButton.setBackground(new Color(0x0C8320));
                 break;
             case LIGHT:
                 this.jButton.setBackground(Color.WHITE);
@@ -142,10 +142,9 @@ public class Cell {
                 }
             }
             }
-        }
-
         Move move = new Move(moves, score);
         this.setMove(move);
         return isLegal;
+        }
     }
 }
