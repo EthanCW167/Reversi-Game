@@ -116,12 +116,12 @@ public class Cell {
         boolean isLegal = false;
         int score = 0;
         ArrayList<DirectedMove> moves = new ArrayList<DirectedMove>();
-        int[][] DIRS = {{-1,-1}, {-1,0}, {-1,1},  {0,-1}, {1,1}, {1,0}, {1,-1}};
+        int[][] DIRS = {{-1,-1}, {-1,0}, {-1,1},  {0,-1}, {0,1}, {1,1}, {1,0}, {1,-1}};
 
         for (int[] dir : DIRS){
             int temp_score = 0;
             int d_row = this.getRow() + dir[0];
-            int d_col = this.getColumn() ;
+            int d_col = this.getColumn();
             if (0 <= d_col &&  d_col < BOARD_SIZE && 0 <=  d_row && d_row < BOARD_SIZE
                     && cells[d_row][d_col].getValue() != CellStatus.EMPTY
                     && cells[d_row][d_col].getValue() != opponent) {
