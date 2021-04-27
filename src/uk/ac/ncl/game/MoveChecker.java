@@ -39,7 +39,7 @@ public class MoveChecker {
         for (int i = 0; i <= potentialMoves.size()-1; i++){
             if (potentialMoves.get(i).getMove().getScore() > max_score){
                 opponentsMove = potentialMoves.get(i);
-                System.out.println(potentialMoves.get(i).getRow() + " " + potentialMoves.get(i).getRow());
+                //System.out.println(potentialMoves.get(i).getRow() + " " + potentialMoves.get(i).getRow());
 
             }
         }
